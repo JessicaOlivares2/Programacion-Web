@@ -1,0 +1,24 @@
+.encabezado {
+  display: flex;
+}
+.mainContent {
+  display: flex;
+  justify-content: space-evenly;
+}
+.derecha {
+  text-align: right;
+}
+/*.colorDeFondo {
+  
+}*/
+.caja-foto {
+  width: 35%;
+}
+.caja-titulo {
+  width: 90%;
+  background-color: darkslategray;
+  color: azure;
+}
+.imagen-cv {
+  width: 200px;
+}
