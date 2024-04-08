@@ -1,0 +1,42 @@
+.alineado{
+    text-align:center ;
+ }
+ .mainContent{
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+.fondoPagina{
+ background-image: url("../pelis/cine5.jpg");
+ background-size:cover;
+}
+.grilla{
+    display: grid;
+    /*grid-template-columns:250px 250px 250px;//como generar disposicion basica de la grulla*/
+    /*grid-column: repeat(3,250px);*/
+     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+     grid-auto-rows:auto;
+     gap: 15px;
+
+}
+.fotoDinamica{
+    width: 80%;
+    aspect-ratio: 1 / 2;/*es opcional -- darle estructura*/
+    object-fit:cover;
+}
+.colorFondo {
+
+    background-color: darkslategray;
+    color: rgb(46, 124, 124);
+}
+.alineadoFoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.borde{
+    border: 2px solid rgb(28, 100, 122);
+    border-radius: 10px;
+    background-color: rgb(28, 100, 122);
+  }
