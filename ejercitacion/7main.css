@@ -6,10 +6,6 @@
      justify-content: space-evenly;
  }
 
-.fondoPagina{
- background-image: url("../pelis/cine5.jpg");
- background-size:cover;
-}
 .grilla{
     display: grid;
     /*grid-template-columns:250px 250px 250px;//como generar disposicion basica de la grulla*/
@@ -29,26 +25,10 @@
     grid-template-rows: repeat(3,300px);
      gap: 15px;
 }
-.alinear{
-    display: flex;
-    justify-content: space-evenly; 
- /*cuando esta solo el display:flex debe estar el justify-content: space-evenly;*/
-}
-.alinear2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- /*cuando esta solo el display:flex y el aling-items debe estar el flex-direction;*/
-
-}
-.espacio{
-    display: grid;
-    gap: 25px;
-}
 .fotoDinamica{
-    width: 80%;
-    aspect-ratio: 1 / 2;/*es opcional -- darle estructura*/
-    object-fit:cover;
+    width: 40%;
+    aspect-ratio: 1 / 1;/*es opcional -- darle estructura*/
+    object-fit:contain; /*https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
 }
 .colorFondo {
 
@@ -61,8 +41,18 @@
     align-items: center;
 }
 
-.borde{
+.bulBorde{
     border: 2px solid rgb(28, 100, 122);
     border-radius: 10px;
     background-color: rgb(28, 100, 122);
+  }
+  .fueBorde{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+  }
+  .psyBorde{
+    border: 2px solid rgb(255, 251, 0);
+    border-radius: 10px;
+    background-color: rgb(255, 251, 0);
   }
