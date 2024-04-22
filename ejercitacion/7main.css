@@ -1,6 +1,14 @@
 .alineado{
     text-align:center ;
  }
+ .texto{
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 200px;
+    background-color: rgb(245, 245, 245);
+    margin-left: 20px;
+ }
  .mainContent{
      display: flex;
      justify-content: space-evenly;
@@ -25,34 +33,57 @@
     grid-template-rows: repeat(3,300px);
      gap: 15px;
 }
-.fotoDinamica{
-    width: 40%;
-    aspect-ratio: 1 / 1;/*es opcional -- darle estructura*/
-    object-fit:contain; /*https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
-}
-.colorFondo {
+    .fotoDinamica{
+        width: 55%;
+        aspect-ratio: 1 / 1;/*es opcional -- darle estructura*/
+        object-fit:contain; /*https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
+    }
+.fotoMini{
+        width: 8.5%;
+        aspect-ratio: 1 / 1;/*es opcional -- darle estructura*/
+        object-fit:contain; /*https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
+        border-radius: 95px;
+       
+        background-color: rgb(255, 252, 252);
+    }
 
-    background-color: darkslategray;
-    color: rgb(46, 124, 124);
-}
+
 .alineadoFoto{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.alineadoPagina{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
 .bulBorde{
     border: 2px solid rgb(28, 100, 122);
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: rgb(28, 100, 122);
+    margin-bottom: 200px;
   }
   .fueBorde{
     border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: rgb(0, 0, 0);
+    margin-bottom: 200px;
   }
   .psyBorde{
     border: 2px solid rgb(255, 251, 0);
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: rgb(255, 251, 0);
+    margin-bottom: 200px;
+  }
+
+  .chaBorde{
+    border: 2px solid rgb(255, 17, 0);
+    border-radius: 30px;
+    background-color: rgb(255, 17, 0);
+    margin-bottom: 200px;
   }
