@@ -1,0 +1,21 @@
+.forecast {
+    margin: 0;
+    padding: 1.3rem;
+    background-color: #EDE;
+  }
+  
+  .forecast > h1,
+  .day-forecast {
+    margin: 1.5rem;
+    padding: 1.3rem;
+    font-size: 1.2rem;
+  }
+  
+  .day-forecast {
+    background: right/contain content-box border-box no-repeat white;
+  }
+  .grilla{
+
+     gap: 15px;
+
+} 

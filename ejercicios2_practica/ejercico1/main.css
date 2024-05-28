@@ -23,7 +23,7 @@
   color: azure;
 }
 .imagen {
-  width: 100%;
+  /*width: 100%;*/
   height: 900%;
 }
 .borde {
@@ -35,7 +35,13 @@
   border: 2px solid rgb(36, 218, 208);
   border-radius: 25px;
   background-color: rgb(36, 218, 208);
-  width: 500px;
+  width: 200px;
+}
+.borde3 {
+  border: 2px solid rgb(36, 218, 208);
+  border-radius: 25px;
+  background-color: rgb(36, 218, 208);
+  width: 1000px;
 }
 .padding {
   margin-left: 20px;
@@ -44,6 +50,10 @@
 .letra {
   color: rgb(39, 17, 236);
   font-size: large;
+}
+.letra2 {
+  color: rgb(255, 255, 255);
+  font-size:medium
 }
 .fotoMini {
   width: 8.5%;
@@ -75,10 +85,10 @@
   margin-right: 20px;
 }
 .texto {
-  align-items: center;
-  border-radius: 100px;
-  width: 200px;
-  background-color: rgb(245, 245, 245);
+  align-items:center;
+  border-radius: 20px;
+  width: 400px;
+  background-color: rgb(12, 106, 230);
   margin-left: 20px;
 }
 .fondo {

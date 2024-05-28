@@ -1,0 +1,78 @@
+.alineado{
+    text-align:center ;
+ }
+ .texto{
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 200px;
+    background-color: rgb(245, 245, 245);
+    margin-left: 20px;
+ }
+ .mainContent{
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+.grilla{
+    display: grid;
+    /*grid-template-columns:250px 250px 250px;//como generar disposicion basica de la grulla*/
+    /*grid-column: repeat(3,250px);*/
+     grid-template-columns: repeat(3,430px);
+    /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr));*/
+     grid-auto-rows:auto;
+     gap: 15px;
+
+}
+.grilla2{
+    display: grid;
+    /*grid-template-columns:250px 250px 250px;//como generar disposicion basica de la grulla*/
+    /*grid-column: repeat(3,250px);*/
+    /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr));*/
+     grid-template-columns: repeat(3,300px);
+    /* grid-auto-rows:auto;*/
+    grid-template-rows: repeat(3,300px);
+     gap: 15px;
+}
+    .fotoDinamica{
+        width: 55%;
+        aspect-ratio: 1 / 1;/*es opcional -- darle estructura*/
+        object-fit:contain; /*https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
+    }
+.fotoMini{
+        width: 8.5%;
+        aspect-ratio: 1 / 1;/*es opcional -- darle estructura*/
+        object-fit:contain; /*https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
+        border-radius: 95px;
+       
+        background-color: rgb(255, 252, 252);
+    }
+
+
+.alineadoFoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alineadoPagina{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.borde{
+    border: 2px solid rgb(28, 100, 122);
+    border-radius: 30px;
+    background-color: rgb(28, 100, 122);
+    margin-bottom: 200px;
+  }
+
+
+.letra
+{
+  color: white;
+  
+}
