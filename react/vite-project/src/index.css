@@ -1,0 +1,19 @@
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.grilla2 {
+  gap: 300px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.borde {
+  border: 2px solid rgb(28, 100, 122);
+  border-radius: 15px;
+  background-color: rgb(28, 100, 122);
+  margin-bottom: 230px;
+  height: 500px;
+}

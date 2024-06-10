@@ -1,4 +1,4 @@
-import { Profile } from "./components/miPrimerComponente/MiPrimerComponente";
+import { Estado } from "./components/estado/Estado";
 
 const myFuction = () => {
   return <>hola lol </>;
@@ -7,10 +7,8 @@ const myFuction = () => {
 function App() {
   return (
     <>
-      <Profile name={"Akaashi"} lastName={"Keiji"} />
-      <myFuction />
+      <Estado />
     </>
   );
 }
-
 export default App;
