@@ -1,4 +1,4 @@
-import { Estado } from "./components/estado/Estado";
+import RickAndMorty from "./components/Ejercicio.jsx";
 
 const myFuction = () => {
   return <>hola lol </>;
@@ -7,7 +7,7 @@ const myFuction = () => {
 function App() {
   return (
     <>
-      <Estado />
+      <RickAndMorty />
     </>
   );
 }
