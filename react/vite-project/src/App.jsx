@@ -1,4 +1,4 @@
-import RickAndMorty from "./components/Ejercicio.jsx";
+import CambioMoneda from "./components/Api/api";
 
 const myFuction = () => {
   return <>hola lol </>;
@@ -7,7 +7,7 @@ const myFuction = () => {
 function App() {
   return (
     <>
-      <RickAndMorty />
+      <CambioMoneda />
     </>
   );
 }
