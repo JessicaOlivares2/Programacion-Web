@@ -9,9 +9,9 @@ const AboutMe = () => (
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
   >
-    <h2 style={{ textAlign: "center" }}>Sobre Mí</h2>
-    <p style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-      Hola, soy un desarrollador web con experiencia en React y otras
+    <h2 className="animacion" style={{ textAlign: "center"}}>Hi, I am Jessica Olivares</h2>
+    <p style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center"}}>
+      soy un desarrollador web con experiencia en React y otras
       tecnologías. Me encanta crear aplicaciones web modernas y eficientes.
     </p>
   </motion.div>

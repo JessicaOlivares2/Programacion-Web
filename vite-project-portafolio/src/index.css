@@ -5,15 +5,61 @@ body {
   box-sizing: border-box;
 }
 
-h2 {
+h2 { 
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
-p {
+.animacion{
+animation-duration: 1s;
+  animation-name: zoomIn;
+}
+  p {
   font-size: 1rem;
   line-height: 1.6;
+  
 }
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+    
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+
+  }
+}
+.logo{
+  width: 23%;
+  padding: 7px;
+  margin-left: 95px;
+}
+
+.logowasap{
+  width: 19%;
+  padding: 7px;
+  margin-left: 100px;
+}
+
+.grilla {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.gril {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 
 ul {
   margin: 0;
