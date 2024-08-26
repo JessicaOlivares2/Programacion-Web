@@ -9,32 +9,36 @@ const Contact = () => (
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
   >
-    <h2 style={{ textAlign: "center" }}>Contacto</h2>
-    <p style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-      Podes contactarme a través de las siguientes vias:
-    </p>
-    <div className="grilla">
-      <div className="gril2">
-        <div data-aos="fade-left" className="innerGrilla letra">
-          <img className="logo" src="/public/gmail2.png" alt="Gmail" />
+    <div className="contact-container">
+      <div>
+        <h2 style={{ textAlign: "left", paddingLeft: "15px" }}>Contacto</h2>
+        <p style={{ width: "400px", margin: "0 auto", textAlign: "center" }}>
+          Puedes contactarme a través de las siguientes vías:
+        </p>
+        <div className="textP"></div>
+      </div>
+      <div
+        className="logos"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+      >
+        <div>
+          <a href="mailto:example@gmail.com">
+            <img className="logo" src="/public/gmail2.png" alt="Gmail" />
+          </a>
         </div>
         <div>
-          <p>Jessicaolivares863@gmail.com</p>
-        </div>
-        <div data-aos="fade-right" className="innerGrilla letra">
-          <img className="logowasap" src="/public/wasap2.png" alt="WhatsApp" />
-        </div>
-        <div>
-          <p>+54 9 1126991420</p>
-        </div>
-
-        <div data-aos="fade-left" className="innerGrilla letra">
-          <img className="logoGit" src="/public/git.png" alt="github" />
+          <a href="https://wa.me/qr/BTLMQUSTBQ4GH1">
+            <img
+              className="logowasap"
+              src="/public/wasap2.png"
+              alt="WhatsApp"
+            />
+          </a>
         </div>
         <div>
           <a href="https://github.com/JessicaOlivares2">
-            {" "}
-            <p>JessicaOlivares2</p>
+            <img className="logoGit" src="/public/git.png" alt="Github" />
           </a>
         </div>
       </div>

@@ -28,40 +28,23 @@ p {
   }
 }
 .logo {
-  width: 19%;
-  padding: 7px;
-  margin-left: 95px;
+  width: 80px;
+  margin-left: 130px;
 }
 
 .logowasap {
-  width: 14.5%;
-  padding: 9.5px;
-  margin-left: 100px;
+  width: 70px;
+  margin-left: 50px;
 }
 .logoGit {
-  width: 10%;
-  padding: 19.5px;
-  margin-left: 100px;
+  width: 50px;
+  margin-left: 50px;
 }
 
-.gril2 {
-  display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: 100px 100px 100px;
-  gap: 20px;
-}
-
-.grilla {
+.logos {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding: 20px;
-}
-
-.gril {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 ul {
@@ -83,4 +66,15 @@ a:hover {
   margin-left: 10px;
   font-weight: bold;
   text-decoration: none;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between; /* Ajusta el espacio entre el texto y los íconos */
+  align-items: end; /* Alinea verticalmente el texto y los íconos */
+  gap: 2rem; /* Espacio entre el texto y los íconos */
+}
+.textP {
+  --tw-text-opacity: 1;
+  color: rgb(96 110 128 / var(--tw-text-opacity));
+  -ms-text-size-adjust: inherit;
 }
