@@ -1,19 +1,56 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import AdminPage from './pages/AdminPage';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { Post } from "./components/Post";
+import { useEffect, useState } from "react";
+import { supabase } from "./supabaseClient";
+import "./index.css"; // O la ruta correcta a tu archivo CSS
 
-const App = () => (
-  <Router>
-    <Header />
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/admin" element={<AdminPage />} />
-    </Routes>
-    <Footer />
-  </Router>
-);
+export default function App() {
+  const [user, setUser] = useState(null);
 
-export default App;
+  useEffect(() => {
+    const getSession = async () => {
+      ///destructuracion
+      const { data, error } = await supabase.auth.getSession();
+      if (error) {
+        console.log(error);
+      } else {
+        setUser(data?.session?.user);
+      }
+    };
+
+    getSession();
+  }, []);
+
+  const handleLogin = async () => {
+    const { error, data } = await supabase.auth.signInWithOAuth({
+      provider: "github",
+    });
+    if (error) {
+      console.log(error);
+    } else {
+      console.log(data);
+    }
+  };
+
+  return (
+    <>
+      <div className="container">
+        <div className="header-container">
+          <Header />
+        </div>
+      </div>
+
+      <button onClick={handleLogin}>inicio sesión</button>
+      <Footer />
+      <div className="borde letra">
+        <Post
+          titulo={"Mi Blogs"}
+          description={"yo a la night"}
+          link={"./src/public/jkkk.jpg"}
+          parrafo={"mi cantante favorito"}
+        />
+      </div>
+    </>
+  );
+}

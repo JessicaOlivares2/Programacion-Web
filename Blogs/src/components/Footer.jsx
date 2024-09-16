@@ -1,9 +1,3 @@
-import React from 'react';
-
-const Footer = () => (
-  <footer>
-    <p>© 2024 Blog de Viajes y Anécdotas</p>
-  </footer>
-);
-
-export default Footer;
+export default function Footer() {
+  return <footer>buenas, este es mi footer</footer>;
+}

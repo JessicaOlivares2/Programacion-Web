@@ -66,3 +66,35 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.borde {
+  border: 1px solid rgb(80, 0, 126);
+  border-radius: 30px;
+  background-color: rgb(80, 0, 126);
+  margin-bottom: 20px;
+}
+.letra {
+  font-size: 17px;
+  margin-left: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+}
+.centrar2 {
+  text-align: center;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  place-items: center; /* Centra el contenido en ambos ejes */
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+}
