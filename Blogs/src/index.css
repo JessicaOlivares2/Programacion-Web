@@ -131,7 +131,5 @@ body {
   height: 85px;
 }
 .centrar3 {
-  display: flex;
-  justify-content: center;
-  padding: 60px;
+  padding-left: 450px;
 }
